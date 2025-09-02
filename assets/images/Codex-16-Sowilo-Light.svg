@@ -1,0 +1,33 @@
+<svg width="150" height="30" viewBox="0 0 150 30" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @font-face {
+      font-family: 'BabelStone Runic Elder Futhark';
+      src: url('../fonts/BabelStoneRunicElderFuthark.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+    .rune {
+      font-family: 'BabelStone Runic Elder Futhark', sans-serif;
+      font-size: 1.2em;
+      font-weight: bold;
+      fill: #000000;
+    }
+    .name {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      font-size: 1.1em;
+      font-weight: bold;
+      fill: #000000;
+    }
+    .pulse {
+      animation: pulse 4s ease-in-out infinite;
+    }
+    @keyframes pulse {
+      0%   { fill: #000000; }
+      50%  { fill: #4c64ed; }
+      100% { fill: #000000; }
+    }
+  </style>
+  <text x="5" y="24" class="rune pulse">ᛋ</text>
+  <text x="30" y="24" class="name pulse">(Sowilo)</text>
+</svg>
