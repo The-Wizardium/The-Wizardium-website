@@ -395,7 +395,7 @@ and be cast into the eternal abyss of the Onyx Sanctum!*
 ## Cast The Spells
 
 01. **Conjure** [foobar2000](https://www.foobar2000.org) upon your mortal machine.
-02. **Summon** the desired Wizard chapters from their [GitHub sanctums](https://github.com/The-Wizardium).
+02. **Summon** the desired Wizard chapters from their [Hidden Sanctums](https://github.com/The-Wizardium#chronicles-of-the-sealed-chapters).
 03. **Invoke** the components — consult each chapter’s README for sacred incantations.
 
 <br>
@@ -403,7 +403,7 @@ and be cast into the eternal abyss of the Onyx Sanctum!*
 ## Join The Inner Circle
 
 - **Scribe New Spells**: Forge your own incantations! Follow our [Arcane Guidelines](CONTRIBUTING.md) to breach new sanctums.
-- **Report Mystical Anomalies**: Unveil arcane malfunctions or propose new rituals via [Scroll of Issues](https://github.com/The-Wizardium/issues).
+- **Report Mystical Anomalies**: Unveil arcane malfunctions or propose new rituals via [Scroll of Issues](https://github.com/orgs/The-Wizardium/discussions).
 - **Chant with Fellow Adepts**: Commune with scholars on [HydrogenAudio](https://hydrogenaud.io) or etch your creations on X.
 - **Attain Mastery**: Master a sanctum by contributing a chapter to earn your sigil in the Hall of Scholars.
 
