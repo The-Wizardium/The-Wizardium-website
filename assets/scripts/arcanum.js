@@ -1800,6 +1800,8 @@ function initAudioExperienceFactory({ enterOverlay, header, audio, player, toggl
 				player.classList.remove('blink');
 				player.classList.add('offscreen');
 				isInitialDisplay = false;
+				wState.isAltarStarting = false;  // Add this
+				wState.altarMouseListener = initAltarMouseMove(player);
 			}, 1500);
 
 			// Init preload all remaining audio files
@@ -1832,25 +1834,7 @@ function initInitialUI(elements) {
 	elements.header.classList.add('hidden');
 	elements.body.classList.add('overlay-active');
 	elements.audio.volume = 0.5;
-}
-
-/**
- * Initializes the altar animation and mouse move behavior.
- * @param {HTMLElement} player - The altar player element.
- */
-function initAltarAnimation(player) {
-	setTimeout(() => {
-		player.classList.remove('offscreen');
-		player.classList.add('blink');
-
-		setTimeout(() => {
-			player.classList.remove('blink');
-			player.classList.add('offscreen');
-			wState.isAltarStarting = false;
-			wState.altarMouseListener = initAltarMouseMove(player);
-		}, 1500);
-
-	}, 500);
+	elements.player.classList.add('offscreen');
 }
 
 /**
@@ -2087,7 +2071,6 @@ function initEventListeners() {
 	elements.guideButton.addEventListener('click', modalOpenGuide);
 
 	// * UI ELEMENTS * //
-	initAltarAnimation(elements.player);
 	initInitialUI(elements);
 	initMainLogoListener();
 

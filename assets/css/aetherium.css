@@ -93,6 +93,35 @@ body {
 	color: var(--light);
 	background-color: var(--dark-background);
 }
+
+body::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+}
+
+body::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+body::-webkit-scrollbar-button {
+	display: none;
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: #351b40;
+	border-radius: 8px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+	background-color: var(--aetherium);
+}
+
+@supports not selector(::-webkit-scrollbar) {
+	:root {
+		scrollbar-width: thin;
+		scrollbar-color: #351b40 transparent;
+	}
+}
 /* #endregion GLOBAL */
 
 
@@ -315,13 +344,13 @@ p, li, td {
 }
 
 .intro-letter {
-    display: inline; /* Keep letters inline with text flow */
-    transition: color 0.5s ease, text-shadow 0.5s ease, transform 0.5s ease, opacity 0.5s ease;
+	display: inline; /* Keep letters inline with text flow */
+	transition: color 0.5s ease, text-shadow 0.5s ease, transform 0.5s ease, opacity 0.5s ease;
 }
 
 .intro-word {
 	display: inline;
-    transition: color 0.5s ease, text-shadow 0.5s ease;
+	transition: color 0.5s ease, text-shadow 0.5s ease;
 }
 
 .text-preface {
@@ -350,7 +379,7 @@ p, li, td {
 }
 
 .text-nobreak {
-    white-space: nowrap;
+	white-space: nowrap;
 }
 
 .text-cap-word {
@@ -425,7 +454,7 @@ summary::-webkit-details-marker {
 
 /* #region HYPERLINK */
 a {
-    color: var(--aetherium-light);
+	color: var(--aetherium-light);
 	text-decoration: none;
 	border: none;
 	background: none;
@@ -443,39 +472,39 @@ a:hover {
 }
 
 .sanctum-link:hover {
-    animation: text-pulse 4s ease-in-out infinite;
+	animation: text-pulse 4s ease-in-out infinite;
 	filter: brightness(1.2) drop-shadow(0 0 0.5rem var(--pulse-color));
 }
 
 .sanctum-link .rune {
-    display: inline-block;
-    width: 0.75rem;
-    text-align: center;
-    font-family: 'BabelStone Runic Elder Futhark', sans-serif;
-    font-size: 1.2rem;
-    margin-right: 1rem;
-    vertical-align: middle;
-    line-height: 1.2;
+	display: inline-block;
+	width: 0.75rem;
+	text-align: center;
+	font-family: 'BabelStone Runic Elder Futhark', sans-serif;
+	font-size: 1.2rem;
+	margin-right: 1rem;
+	vertical-align: middle;
+	line-height: 1.2;
 }
 
 .sanctum-link.topaz-glow {
-    color: var(--topaz);
-    --pulse-color: var(--topaz);
+	color: var(--topaz);
+	--pulse-color: var(--topaz);
 }
 
 .sanctum-link.ruby-glow {
-    color: var(--ruby);
-    --pulse-color: var(--ruby);
+	color: var(--ruby);
+	--pulse-color: var(--ruby);
 }
 
 .sanctum-link.sapphire-glow {
-    color: var(--sapphire);
-    --pulse-color: var(--sapphire);
+	color: var(--sapphire);
+	--pulse-color: var(--sapphire);
 }
 
 .sanctum-link.veiled-glow {
-    color: var(--veiled);
-    --pulse-color: var(--veiled);
+	color: var(--veiled);
+	--pulse-color: var(--veiled);
 }
 /* #endregion HYPERLINK */
 
